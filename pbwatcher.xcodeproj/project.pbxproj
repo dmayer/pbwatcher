@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65E750FA184E79CB00EE9687 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E750F9184E79CB00EE9687 /* Foundation.framework */; };
+		65E75106184E79CB00EE9687 /* PBWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E75105184E79CB00EE9687 /* PBWatcher.m */; };
+		65E7510E184E7A9900EE9687 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E7510D184E7A9900EE9687 /* UIKit.framework */; };
+		65E75110184E8B1100EE9687 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E7510F184E8B1100EE9687 /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65E750F6184E79CB00EE9687 /* pbwatcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pbwatcher; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E750F9184E79CB00EE9687 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65E750FE184E79CB00EE9687 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		65E750FF184E79CB00EE9687 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		65E75101184E79CB00EE9687 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		65E75104184E79CB00EE9687 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		65E75105184E79CB00EE9687 /* PBWatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWatcher.m; sourceTree = "<group>"; };
+		65E75107184E79CB00EE9687 /* pbwatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pbwatcher-Prefix.pch"; sourceTree = "<group>"; };
+		65E7510D184E7A9900EE9687 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65E7510F184E8B1100EE9687 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		65E75111184E8BCC00EE9687 /* PBWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWatcher.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65E750F3184E79CB00EE9687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E75110184E8B1100EE9687 /* CoreFoundation.framework in Frameworks */,
+				65E7510E184E7A9900EE9687 /* UIKit.framework in Frameworks */,
+				65E750FA184E79CB00EE9687 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65E750ED184E79CB00EE9687 = {
+			isa = PBXGroup;
+			children = (
+				65E7510F184E8B1100EE9687 /* CoreFoundation.framework */,
+				65E7510D184E7A9900EE9687 /* UIKit.framework */,
+				65E750FB184E79CB00EE9687 /* pbwatcher */,
+				65E750F8184E79CB00EE9687 /* Frameworks */,
+				65E750F7184E79CB00EE9687 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65E750F7184E79CB00EE9687 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E750F6184E79CB00EE9687 /* pbwatcher */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65E750F8184E79CB00EE9687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65E750F9184E79CB00EE9687 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65E750FB184E79CB00EE9687 /* pbwatcher */ = {
+			isa = PBXGroup;
+			children = (
+				65E75111184E8BCC00EE9687 /* PBWatcher.h */,
+				65E75105184E79CB00EE9687 /* PBWatcher.m */,
+				65E750FC184E79CB00EE9687 /* Package */,
+				65E75100184E79CB00EE9687 /* Supporting Files */,
+			);
+			path = pbwatcher;
+			sourceTree = "<group>";
+		};
+		65E750FC184E79CB00EE9687 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				65E750FD184E79CB00EE9687 /* DEBIAN */,
+				65E75102184E79CB00EE9687 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		65E750FD184E79CB00EE9687 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				65E750FE184E79CB00EE9687 /* control.txt */,
+				65E750FF184E79CB00EE9687 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		65E75100184E79CB00EE9687 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65E75101184E79CB00EE9687 /* PackageVersion.plist */,
+				65E75107184E79CB00EE9687 /* pbwatcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65E75102184E79CB00EE9687 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				65E75103184E79CB00EE9687 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		65E75103184E79CB00EE9687 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				65E75104184E79CB00EE9687 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65E750F5184E79CB00EE9687 /* pbwatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E7510A184E79CB00EE9687 /* Build configuration list for PBXNativeTarget "pbwatcher" */;
+			buildPhases = (
+				65E750F2184E79CB00EE9687 /* Sources */,
+				65E750F3184E79CB00EE9687 /* Frameworks */,
+				65E750F4184E79CB00EE9687 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pbwatcher;
+			productName = pbwatcher;
+			productReference = 65E750F6184E79CB00EE9687 /* pbwatcher */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65E750EE184E79CB00EE9687 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 65E750F1184E79CB00EE9687 /* Build configuration list for PBXProject "pbwatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65E750ED184E79CB00EE9687;
+			productRefGroup = 65E750F7184E79CB00EE9687 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65E750F5184E79CB00EE9687 /* pbwatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65E750F4184E79CB00EE9687 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65E750F2184E79CB00EE9687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E75106184E79CB00EE9687 /* PBWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		65E75108184E79CB00EE9687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		65E75109184E79CB00EE9687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		65E7510B184E79CB00EE9687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pbwatcher/pbwatcher-Prefix.pch";
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/bin;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		65E7510C184E79CB00EE9687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pbwatcher/pbwatcher-Prefix.pch";
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/bin;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65E750F1184E79CB00EE9687 /* Build configuration list for PBXProject "pbwatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E75108184E79CB00EE9687 /* Debug */,
+				65E75109184E79CB00EE9687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E7510A184E79CB00EE9687 /* Build configuration list for PBXNativeTarget "pbwatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E7510B184E79CB00EE9687 /* Debug */,
+				65E7510C184E79CB00EE9687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65E750EE184E79CB00EE9687 /* Project object */;
+}
