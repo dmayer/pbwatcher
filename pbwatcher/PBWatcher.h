@@ -2,7 +2,7 @@
 //  PBWatcher.h
 //  pbwatcher
 //
-//  Created by Daniel Mayer on 12/3/13.
+//  Created by Daniel A. Mayer on 12/3/13.
 //
 //
 #ifndef pbwatcher_PBWatcher_h

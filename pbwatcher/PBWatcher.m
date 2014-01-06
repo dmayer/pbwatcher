@@ -2,8 +2,8 @@
 //  main.m
 //  pbwatcher
 //
-//  Created by Daniel Mayer on 12/3/13.
-//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
+//  Created by Daniel A. Mayer on 12/3/13.
+//  Copyright (c) 2013 Daniel A. Mayer. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
